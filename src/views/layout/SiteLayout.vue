@@ -2,14 +2,19 @@
 
 // Import
 import Navbar from '../../components/shared/Navbar.vue'
+import Main from '@/components/organisms/Main.vue'
 import Footer from '../../components/shared/Footer.vue'
 
 export default {
   setup() {
     
   },
+  props: {
+    navigationItems: Array,
+  },
   components: {
     Navbar,
+    Main,
     Footer,
   }
 }
@@ -18,11 +23,13 @@ export default {
 <template>
   <div>
     <!-- Navbar -->
-    <Navbar />
+    <div class="sticky top-0">
+      <Navbar :navigationItems="navigationItems" />
+    </div>
 
-    <main>
+    <Main>
       <slot />
-    </main>
+    </Main>
 
     <!-- Footer -->
     <Footer />

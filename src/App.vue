@@ -12,8 +12,24 @@ export default {
       navigationItems: [
         {
           path: '/',
-          label: 'Home'
-        }
+          label: 'Home',
+        },
+        {
+          path: '/',
+          label: 'Loans',
+        },
+        {
+          path: '/',
+          label: 'Services',
+        },
+        {
+          path: '/',
+          label: 'Legal',
+        },
+        {
+          path: '/',
+          label: 'Home',
+        },
       ]
     }
   },
@@ -24,7 +40,7 @@ export default {
 </script>
 
 <template>
-  <SiteLayout>
+  <SiteLayout :navigationItems="navigationItems">
     <router-view></router-view>
   </SiteLayout>
 </template>

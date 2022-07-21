@@ -1,14 +1,18 @@
 <script>
 
-// Import
+// Imports
 
 export default {
   setup() {
     
   },
+  components: {
+   
+  }
+
 }
 </script>
 
 <template>
-  <div>This is the banner</div>
+  <slot />
 </template>
