@@ -1,15 +1,16 @@
 <script>
 
-// Import ampli
+// Import the amplitude configuration in this component.
 import { ampli } from '../../ampli';
 
 export default {
   setup() {
-    // Initialize ampli
+    // Initialize amplitude with the production environment
     ampli.load({ environment: 'production' });
   },
   methods: {
     handleLoanSignupClick() {
+      // Log the event to amplitude when the loan signup button is clicked
       ampli.loanSignupClick();
     }
   }
