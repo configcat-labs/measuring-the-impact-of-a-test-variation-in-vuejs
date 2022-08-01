@@ -8,6 +8,8 @@ This is a fictional website made with Vue3 for a fictional capital company (Acme
 
 Here is a screenshot:
 
+![Snapshot of the sample application](https://user-images.githubusercontent.com/74829200/182262888-9dd1c8a1-b33f-437f-a88f-8cb1a3272172.png)
+
 ## How it works
 
 Clicking on the button under the CTA text in the banner logs an event to Amplitude. The events are then recorded in 
